@@ -20,38 +20,39 @@
 
 // const miArray =[]
 // console.log(miArray);
-function Persona(nombre, edad, sueldo){
-    //atributos
-    this.nombre = nombre;
-    this.edad = edad;
-    this.sueldo = sueldo;
+// function Persona(nombre, edad, sueldo){
+//     //atributos
+//     this.nombre = nombre;
+//     this.edad = edad;
+//     this.sueldo = sueldo;
 
    
-}
+// }
 
  //metodos
- Persona.prototype.hablar= function(algo){
-    console.log('====================================');
-    console.log('persona que habla-->', algo);
-    console.log('====================================');
-}
+//  Persona.prototype.hablar= function(algo){
+//     console.log('====================================');
+//     console.log('persona que habla-->', algo);
+//     console.log('====================================');
+// }
 
-Persona.prototype.caminar= function(){
-    console.log('====================================');
-    console.log('persona que camina-->');
-    console.log('====================================');
-}
+// Persona.prototype.caminar= function(){
+//     console.log('====================================');
+//     console.log('persona que camina-->');
+//     console.log('====================================');
+// }
 
 
- const persona1= new Persona('carol', 55, 55000);
+//  const persona1= new Persona('carol', 55, 55000);
+//  console.log(persona1);
 
     /**
      * accedemos al metodo caminar
      */
-    persona1.caminar()
+    // persona1.caminar()
 //  console.log(persona1);
 
-const persona2= new Persona('carol', 55);
+// const persona2= new Persona('carol', 55);
 //  console.log(persona2);
 
 
@@ -71,3 +72,40 @@ const persona2= new Persona('carol', 55);
 //     this.calificacion = calificacion;
     
 // }
+
+function nombre (dato1, dato2){
+    console.log('esta funcion suma');
+    const suma = 5+8;
+}
+nombre()
+/**
+ * clases
+ */
+class Persona  {
+    /**
+     * el constructor es un metodo que se ejecuta aumtomaticamente 
+     * al momento de crear una instancia de nuestra clase
+     */
+
+    constructor(nombre, genero, edad){
+        this.nombre = nombre;
+        this.genero = genero;
+        this.edad = edad;
+    }
+
+    // Metodos
+    hablar(){
+        console.log('una persona que habla');
+    }
+
+    correr(distancia){
+        console.log('una persona que corre una distancia de: ', distancia);
+
+    }
+
+}
+
+const persona = new Persona('pepito', 'masculino', 55);
+console
+persona.hablar()
+persona.correr('5km');
